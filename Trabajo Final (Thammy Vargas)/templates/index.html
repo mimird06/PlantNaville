@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>PlantNaville</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/img/icon.png" alt="logo pag">
+            <h2 class="nombre-pag"> PlantNaville</h2>
+        </div>
+        <nav>
+            <a href="{{url_for('home')}}">Inicio</a>
+            <a href="{{url_for('Galeria')}}">Galeria</a>
+            <a href="{{url_for('Agregar')}}">Agregar</a>
+            <a href="{{url_for('Acerca')}}">Acerca de</a>
+        </nav>
+    </header>
+    <div id="main">
+        <h2 class="titulo"> ¡Bienvenido! </h2>
+        <div class="contenido">
+            <img src="/static/img/icon3.png" alt="inicio">
+            <p> <b>PlantNaville</b> es una página donde podrás encontrar y </br>
+                agregar información de manera sencilla sobre tus </br>
+                flores y plantas favoritas.</br>
+            </br>
+                <i>"Plantar un árbol, ya sea desde la semilla o </br>
+                    partiendo del brinzal te convierte en una suerte </br>
+                    de progenitor de la naturaleza" </i></br>
+            </br>
+                    <b> -Joaquín Araújo</b>
+            </p>
+        </br>
+            <div class="add">
+                <a href="{{url_for('Agregar')}}">
+                    <input type="submit" class="submitBtn" value="Agregar Info">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,332 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body{
+    background-color: #A5EEA0;
+}
+
+/* CSS del INICIO*/ 
+a {
+    text-decoration: none;
+    color: #495464;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #FFFDE3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nombre-pag{
+    font-size: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+    margin-right: 20px;
+}
+
+nav a{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    -webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+
+}
+
+nav a:hover {
+    background: #B4E197;
+    border-radius: 50px;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    div{
+        flex-direction: column;
+    }
+
+    #prueba{
+        flex-direction: column;
+    }
+
+    form{
+        flex-direction: column;
+    }
+}
+
+.titulo{
+    position: flex;
+    font-weight: bold;
+    text-align: center;
+    font-size: 90px;
+}
+
+.contenido{
+    background-color: #FFFDE3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-large;
+    height: 430px;
+
+}
+
+.contenido img{
+    margin-top: 30px;
+    margin-right: 50px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+/* CSS de CUADROS */
+.formulario img{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    height: 200px; 
+    opacity: 100%;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    display: block;
+    height: 760px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #FFFDE3;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.form{
+    width: 400px;
+    padding: 20px 450px;
+}
+
+.formulario .cuadro input{
+    position: relative;
+    width: 100%;
+    color: black;
+    background: transparent;
+    border-bottom: 2px solid black;
+    margin-bottom: 50px;
+}
+
+.input{
+    position:absolute;
+    top: 15px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+
+.input:focus + .label{
+    top: -3px;
+    left: 3px;
+    z-index: 10;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222222
+}
+
+
+::placeholder{
+    color: transparent;
+}
+
+.input:not(::placeholder-shown)+ .label{
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.label{
+    font-weight: bold;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    color: #42ab49;
+    font-size: 25px;
+    transition: 0.5s;
+    z-index: 0;
+} 
+
+
+.submitBtn {
+    display: block;
+    padding: 15px 30px;
+    background-color: #42ab49;
+    color: white;
+    border-radius: 6px;
+    font-size: 30px;
+    opacity: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+.submitBtn:hover{
+    background-color: #A5EEA0;
+    transform: translateY(-2px);
+}
+
+
+/* CSS BOTON PARA AGREGAR */
+.contenido .add input[type="submit"]{
+    background-color: #42ab49;
+    color: white;
+    opacity: 100%;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 11%;
+    display: block;
+    padding: 5px;
+    width: 40%;
+    border: #42ab49;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    border-radius: 5px;
+    left: 560px;
+}
+
+.contenido .add:hover{
+    background: #495464;
+    border-radius: 50px;
+}
+
+
+/*CSS DE LA GALERIA */
+#prueba{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    align-items: center;
+
+}
+
+.destacados{
+    padding: 5px 5px 5px 5px;
+    width: 390px;
+    height: 75%;
+    overflow: hidden;
+    background: #FFFDE3;
+    border-radius: 20px;
+    margin: 5px 0px 5px 0px;
+    position: relative;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 300ms;
+    gap: 20px;
+}
+
+.destacados:hover{
+    box-shadow:10px 10px 5px #222222;
+    transform: translate(-5px,-5px);
+}
+
+blockquote {
+    background: transparent;
+    border: none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+li {
+    text-align: center;
+}
+
+.centro{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.img-fluid{
+    padding: auto;
+    margin: 10px;
+    width: 300px; 
+    border: solid 4px #4E944F;
+}
+
+.cuerpo{
+    background-color: #FFFDE3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-large;
+    height: 430px;
+}
+
+.cuerpo img{
+    margin-top: 30px;
+    margin-left: 25px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.parrafo-galeria{
+    text-align: center;
+    padding: auto;
+    font-size: 18px;
+}
+
+.alerta-mensaje{
+    width: 400px;
+    animation: movimiento 2.5s linear infinite;
+    position: absolute;
+    left: 900px;
+    top: 450px;
+    font-size: 15px;
+    background: #A5EEA0;
+    box-shadow: 4px 3px 8px 0 rgb(175, 172, 172);
+    border-radius: 30px;
+    text-align: center;
+}
+
+@keyframes movimiento{
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(10px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }

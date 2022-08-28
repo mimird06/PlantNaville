@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Agregar info</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/img/icon.png" alt="logo pag">
+            <h2 class="nombre-pag"> PlantNaville</h2>
+        </div>
+        <nav>
+            <a href="{{url_for('home')}}">Inicio</a>
+            <a href="{{url_for('Galeria')}}">Galeria</a>
+            <a href="{{url_for('Agregar')}}">Agregar</a>
+            <a href="{{url_for('Acerca')}}">Acerca de</a>
+        </nav>
+    </header>
+
+    <div id="main">
+        <h2 class="titulo"> Agregar Info</h2>
+        <div class="formulario">
+            <img src="/static/img/img9.png" alt="inicio">
+            <form action="/agregar/datos" class="form" method="post">
+                
+                <div class="cuadro">
+                    <label for="" class="label"> Nombre Planta </label>
+                    <input type="text" name="nombrePlanta" class="input" placeholder="a">
+                </div>
+
+                <div class="cuadro">
+                    <label for="" class="label"> Nombre Cientifco </label>
+                    <input type="text" name="nombreCientifico" class="input" placeholder="a">
+                </div>
+
+                <div class="cuadro">
+                    <label for="" class="label"> URL Imagen </label>
+                    <input type="url" name="imagenURL" class="input" placeholder="a">
+                </div>
+
+                <div class="cuadro">
+                    <label for="" class="label"> Breve Descripcion </label>
+                    <input type="text" name="descripcion" class="input" placeholder="a">
+                </div>
+            </br>
+                <input type="submit" class="submitBtn" value="Agregar Datos">
+            </form>
+            <div class="alerta-mensaje">
+                <div class="letras-mensaje">
+                <h1><strong>{{alerta}}</strong></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
