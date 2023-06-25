@@ -1,4 +1,4 @@
-# Proyecto-Final
+# Proyecto-PlantNaville
 
 Este trabajo consiste en una página web tipo Foro en el cual usuario puede subir información acerca de plantas como su nombre, nombre cientifico, una breve descripción e insertar una imagen por URL.
 
